@@ -13,3 +13,27 @@ Draw a 100 x 100 square using the turtle module.
 	d. Hint: Use up and goto 
 	e. Hint: Make sure mainloop() is at the end of your program! 
 """
+import turtle
+import random
+#turtle.forward(100)
+#turtle.right(90)
+#turtle.forward(100)
+#turtle.right(90)
+#turtle.forward(100)
+#turtle.right(90)
+#turtle.forward(100)
+def square(x,y,l):
+	turtle.up()
+	turtle.goto(x,y)
+	turtle.down()
+	turtle.forward(l)
+	turtle.right(90)
+	turtle.forward(l)
+	turtle.right(90)
+	turtle.forward(l)
+	turtle.right(90)
+	turtle.forward(l)
+#turtle.goto(random.randint(x,y))
+square(random.randint(-100,100),random.randint(-100,100),random.randint(1,200))
+
+turtle.mainloop()

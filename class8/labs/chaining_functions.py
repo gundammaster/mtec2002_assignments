@@ -15,3 +15,15 @@ one
 two
 three
 """
+def f1():
+	print "one"
+def f2():
+	f1()
+	print "two"
+def f3():
+	f2()
+	print"three"
+print "calling f1"
+f1()
+print "calling f3"
+f3()

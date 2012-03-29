@@ -1,4 +1,4 @@
-"""
+ """
 hello_pygame.py
 ===
 PyGame is a module that provides access to audio, keyboard, mouse, joystick and 2D and 3D graphics.  It's used for creating animations, interactive programs, and - of course - games.
@@ -21,12 +21,12 @@ Try changing the following parts of this program:
 """
 import pygame
 
-FRAME_RATE = 20
-WINDOW_WIDTH = 640
-WINDOW_HEIGHT = 480
-WINDOW_TITLE = "My Game"
+FRAME_RATE = 60
+WINDOW_WIDTH = 500
+WINDOW_HEIGHT = 500
+WINDOW_TITLE = "The something Game"
 
-background_color = (255, 255, 255)
+background_color = (255, 0, 0)
 running = True
 pygame.init()
 
@@ -45,7 +45,8 @@ while running == True:
 
 	# draw everything here!  this line draws a circle in the middle of the screen
 	pygame.draw.circle(screen, (0, 0, 200), (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2), 10)
- 
+ 	pygame.draw.rect(250,250,100,100)
+ 	
 	clock.tick(FRAME_RATE)
 	pygame.display.flip()
 

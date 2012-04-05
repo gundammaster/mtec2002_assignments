@@ -35,3 +35,8 @@ distance: 42, time: "asdf"
 I don't think you put in two numbers.
 >
 """
+while True:
+	print "give me a distance"
+	d = raw_input('>')
+	print "give me a time"
+	t = raw_input('>')

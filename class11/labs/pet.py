@@ -22,3 +22,23 @@ meow
 meow
 >>> 
 """
+class pet:
+	def __init__ (self,n):
+		self.name = n
+	def __str__(self):
+		return self.name
+	def procreate(self,p):
+		return pet("baby")
+	def speak(self):
+		print "animal sound"
+	def speak_twice(self):
+		self.speak()
+		self.speak()
+class dog(pet):
+	def speak(self):
+		print "woof"
+p = pet("fluffy")
+print p
+d = dog("spot")
+print d
+d.speak

@@ -11,3 +11,21 @@ myutils.py
 8.  (Intermediate) Fix your program so that your new feature/test is implemented.  Implement it in whatever way you like (exception handling, checking if the argument is numeric, etc... for example: http://code.activestate.com/recipes/303495-check-that-a-string-represents-an-integer-number/)
 
 """
+def shout(word,x):
+	""" 
+	>>> shout("blah",2)
+	'BLAH!!'
+	"""
+	#print "give me a word or a sentence to shout"
+	#word = raw_input(">")
+	x = "!" * x
+	return word.upper() + x
+	
+
+print shout("blah",2)
+
+if __name__ == '__main__':
+
+
+import doctest
+doctest.testmod()

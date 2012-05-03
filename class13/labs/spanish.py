@@ -17,3 +17,15 @@ spanish.py
 	...
 	# use sys.argv[1] to get the first item passed in through the commandline
 """
+def to_spanish(anything):
+	#if anything == 'cat':
+	#	return "gato"
+	
+	translation = {'cat':'gato','dog':'perro','hello','hola'}
+	return translation[anything]
+	
+
+if __name__ == '__main__':
+	print to_spanish("cat")
+	import doctest
+	doctest.testmod()
